@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //REFERENCES
+    private Animator animator;
+
+    //VARIABLES
     public float moveSpeed;
     public bool isMoving;
 
-    private Animator animator;
     private void Awake()
     {
         animator = GetComponent<Animator>();
