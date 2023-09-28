@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 2390145118994354116}
   - component: {fileID: 2390145118994354119}
   - component: {fileID: 1067760488}
-  - component: {fileID: 8765008242257817928}
   - component: {fileID: 1067760489}
+  - component: {fileID: 8765008242257817928}
+  - component: {fileID: 233249035828355898}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -107,20 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &8765008242257817928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2390145118994354118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24cfc7203d4c97945974f4b2e49548f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
-  isMoving: 0
 --- !u!61 &1067760489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,3 +134,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.125, y: 1.625}
   m_EdgeRadius: 0
+--- !u!114 &8765008242257817928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2390145118994354118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cfc7203d4c97945974f4b2e49548f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  isMoving: 0
+--- !u!114 &233249035828355898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2390145118994354118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7753b3897310da747ac407faecf24cb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solidObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longGrassLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  percentEncounterPokemon: 10
