@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0d06c47c1b28f418b938658d6ef005, type: 3}
   m_Name: Bulbasaur
   m_EditorClassIdentifier: 
-  name: 
-  description: 0
+  pokemonName: 
+  description: 
   frontSprite: {fileID: 0}
   backSprite: {fileID: 0}
   type1: 0
