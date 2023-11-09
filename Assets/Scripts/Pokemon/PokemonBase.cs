@@ -1,13 +1,28 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Pokemon", menuName = "Pokemon/Create a new Pokemon")]
 public class PokemonBase : ScriptableObject
 {
     [SerializeField] string pokemonName;
-
     [TextArea]
     [SerializeField] string description;
 
+    [SerializeField] Sprite frontSprite;
+    [SerializeField] Sprite backSprite;
+
+    [SerializeField] PokemonType type1;
+    [SerializeField] PokemonType type2;
+
+    // BASE STATS
+    [SerializeField] int maxHP;
+    [SerializeField] int attack;
+    [SerializeField] int defense;
+    [SerializeField] int spAttack;
+    [SerializeField] int spDefense;
+    [SerializeField] int speed;
+
+    [SerializeField] List<LeanrableMove> leanrableMoves;
     public string PokemonName
     {
         get { return pokemonName; }
@@ -18,12 +33,6 @@ public class PokemonBase : ScriptableObject
         get { return description; }
         set { description = value; }
     }
-
-    [SerializeField] Sprite frontSprite;
-    [SerializeField] Sprite backSprite;
-
-    [SerializeField] PokemonType type1;
-    [SerializeField] PokemonType type2;
     public PokemonType Type1
     {
         get { return type1; }
@@ -34,15 +43,6 @@ public class PokemonBase : ScriptableObject
         get { return type2; }
         set { type2 = value; }
     }
-
-    // BASE STATS
-    [SerializeField] int maxHP;
-    [SerializeField] int attack;
-    [SerializeField] int defense;
-    [SerializeField] int spAttack;
-    [SerializeField] int spDefense;
-    [SerializeField] int speed;
-
     public int MaxHP
     {
         get { return maxHP; }
@@ -63,14 +63,35 @@ public class PokemonBase : ScriptableObject
         get { return spAttack; }
         set { spAttack = value; }
     }
+    public int SpDefense
+    {
+        get { return spDefense; }
+        set { spDefense = value; }
+    }
     public int Speed
     {
         get { return speed; }
         set { speed = value; }
     }
-
+    public List<LeanrableMove> LeanrableMoves
+    {
+        get { return leanrableMoves; }
+    }
 }
-
+[System.Serializable]
+public class LeanrableMove
+{
+    [SerializeField] MoveBase moveBase;
+    [SerializeField] int level;
+    public MoveBase Base
+    {
+        get { return moveBase; }
+    }
+    public int Level
+    {
+        get { return level; }
+    }
+}
 public enum PokemonType
 {
     Normal,
