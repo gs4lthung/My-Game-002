@@ -25,9 +25,9 @@ MonoBehaviour:
   spDefense: 65
   speed: 45
   leanrableMoves:
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
+  - moveBase: {fileID: 11400000, guid: dd4cf2bbbd6f4cc4aa12fa3f1f498461, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 5557c8994e7dcb0459ab91cae5b76daa, type: 2}
+    level: 4
+  - moveBase: {fileID: 11400000, guid: f36a4bfe65f2c5c40afde7ee1eefac4e, type: 2}
+    level: 7

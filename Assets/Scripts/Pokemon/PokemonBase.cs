@@ -73,6 +73,16 @@ public class PokemonBase : ScriptableObject
         get { return speed; }
         set { speed = value; }
     }
+    public Sprite FrontSprite
+    {
+        get { return frontSprite; }
+        set { frontSprite = value; }
+    }
+    public Sprite BackSprite
+    {
+        get { return backSprite; }
+        set { backSprite = value; }
+    }
     public List<LeanrableMove> LeanrableMoves
     {
         get { return leanrableMoves; }
