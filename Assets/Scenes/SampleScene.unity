@@ -2340,8 +2340,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 60}
-  m_SizeDelta: {x: 800, y: 293.7}
+  m_AnchoredPosition: {x: 0, y: 56.77}
+  m_SizeDelta: {x: 800, y: 287.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &981684109
 MonoBehaviour:
@@ -18832,8 +18832,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -146.85}
-  m_SizeDelta: {x: 800, y: 121.55}
+  m_AnchoredPosition: {x: 0, y: -143.23}
+  m_SizeDelta: {x: 800, y: 114.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975900598
 MonoBehaviour:
@@ -18886,7 +18886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lettersPerSecond: 30
-  highlightedColor: {r: 0, g: 1, b: 1, a: 1}
+  highlightedColor: {r: 0, g: 0.63179255, b: 1, a: 1}
   dialogText: {fileID: 2143848234}
   actionSelector: {fileID: 1442947489}
   moveSelector: {fileID: 1407186842}
