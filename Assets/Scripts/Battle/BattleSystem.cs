@@ -64,6 +64,9 @@ public class BattleSystem : MonoBehaviour
         var move = playerUnit.Pokemon.Moves[currentMove];
         yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.PokemonName} used {move.Base.MoveName}");
 
+        playerUnit.PlayerAttackAnimation();
+        yield return new WaitForSeconds(1f);
+
         var damageDetails = enemyUnit.Pokemon.TakeDamage(move, playerUnit.Pokemon);
         yield return enemyHUD.UpdateHP();
         yield return ShowDamageDetails(damageDetails);
